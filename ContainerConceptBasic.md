@@ -23,3 +23,5 @@ Kubernetes从一个宏观的视角定义了各容器之间的交互关系，利�
 Kubernetes的核心思想，即按照用户意愿和系统规则来自动处理各容器之间的关系，这就是所谓的”容器编排能力“。
 
 ##### Kubernetes各组件作用
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/0%402x.png">
