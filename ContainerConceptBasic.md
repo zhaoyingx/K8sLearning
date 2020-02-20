@@ -32,10 +32,14 @@ Kubernetes的核心思想，即按照用户意愿和系统规则来自动处理�
 
 Master中各组件可以作为pod来运行。
 
-<strong style="color: #6AAFE6">etcd介绍</strong>
+<strong><span style="color: #6AAFE6">etcd介绍</span></strong>
 
 1.	key-value 分布式存储
 2.	防止API Server重启时数据丢失
 3.	etcd唯一的客户端就是API Server（但一般是多个实例）
 4.	如何保证多个etcd实例的一致性？这里了解下一致性算法原理
 5.	etcd实例数量一定要是基数
+
+<strong><span style="color: #6AAFE6">API Server介绍</span></strong>
+
+kubectl apply -f xx.yaml通过发送http post请求到API Server，API Server将对象存储到etcd。客户端发送请求到API Server后，API Server需要对客户端进行验证。
