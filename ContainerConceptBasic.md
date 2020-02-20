@@ -25,3 +25,17 @@ Kubernetes的核心思想，即按照用户意愿和系统规则来自动处理�
 ##### Kubernetes各组件作用
 
 <img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/0%402x.png">
+
+有上图可以看出，API Server和其它组件通信基本都是有那些其它组件发起。为了保证高可用，Master中<strong>etcd和API Server组件都包含多个实例</strong>运行在多个服务器上——Kubernetes的分布式特性。
+
+但是Scheduler和Controller Manager在特定时间内<strong>只能有一个实例运行</strong>。
+
+Master中各组件可以作为pod来运行。
+
+<strong style="color: #6AAFE6">etcd介绍</strong>
+
+1.	key-value 分布式存储
+2.	防止API Server重启时数据丢失
+3.	etcd唯一的客户端就是API Server（但一般是多个实例）
+4.	如何保证多个etcd实例的一致性？这里了解下一致性算法原理
+5.	etcd实例数量一定要是基数
