@@ -28,4 +28,4 @@ Audoscaler扩容速率：单次扩容的副本数；两次扩容的时间间隔
 
 ###集群节点自动伸缩 Cluster Autoscaler
 
-<img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/1@2x.png">
+<img width="800" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/1@2x.png">
