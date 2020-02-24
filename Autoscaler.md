@@ -26,6 +26,6 @@ Audoscaler扩容速率：单次扩容的副本数；两次扩容的时间间隔
 
 目前还不支持改变正在运行的Pod的resource request和limit？ 
 
-###集群节点自动伸缩 Cluster Autoscaler
+### 集群节点自动伸缩 Cluster Autoscaler
 
 <img width="800" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/1@2x.png">
