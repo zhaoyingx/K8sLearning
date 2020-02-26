@@ -31,3 +31,16 @@ Dockerfile Command
 <strong>CMD</strong>
 
 <strong>LABEL</strong>
+
+执行`docker run -p 8888:5000 --name localwebapp zhaoying/localtestwebapp`
+
+访问`http://localhost:8888/`
+
+登录 `docker login`
+
+退出 `docker logout`
+
+<img width="400" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/6@2x.png">
+
+上传到dockerhub `docker push zhaoying/localtestwebapp`
+
