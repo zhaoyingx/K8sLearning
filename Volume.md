@@ -31,3 +31,9 @@ mount控制器VolumeManagerReconciler是kubelet的一部分，运行在node节�
 ### StorageClass
 
 作用：创建pv模板
+
+#### Local Persistent Volume
+
+首先在集群中配置好存储设备，即给虚拟机额外挂载一个磁盘
+
+StorageClass volumeBindingMode=WaitForFirstConsumer含义，Pod被调度时执行绑定
