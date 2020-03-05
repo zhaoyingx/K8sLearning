@@ -14,13 +14,13 @@
 
 设置可以参考以下图片
 
-<img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/7@2x.png">
+<img width="400" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/7@2x.png">
 
-<img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/8@2x.png">
+<img width="400" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/8@2x.png">
 
-<img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/9@2x.png">
+<img width="400" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/9@2x.png">
 
-<img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/10@2x.png">
+<img width="400" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/10@2x.png">
 
 #### 购买虚拟机
 
@@ -33,3 +33,30 @@
 实例创建完成
 
 <img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/12@2x.png">
+
+### 登录到ECS
+
+chmod 600 xxx.pem
+
+执行`ssh -i kp-xx.pem root@x.x.x.x`, 登录成功
+
+### 安装
+
+可以参考这个官方[链接](https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+
+1.	安装docker
+
+参考[链接](https://docs.docker.com/install/linux/docker-ce/centos/)，选择Install using the repository
+
+执行`sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2`
+
+
+开始了
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/13@2x.png">
+
+安装完成后：
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/14@2x.png">
