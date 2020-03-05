@@ -10,7 +10,9 @@
 
 3.	登录到ECS，安装如docker、kubeadm。kubelet等
 
-### VPC、子网（交换机）、安全组
+### 前期准备
+
+#### VPC、子网（交换机）、安全组
 
 设置可以参考以下图片
 
@@ -34,17 +36,17 @@
 
 <img width="600" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/12@2x.png">
 
-### 登录到ECS
+#### 登录到ECS
 
 chmod 600 xxx.pem
 
 执行`ssh -i kp-xx.pem root@x.x.x.x`, 登录成功
 
-#### 安装docker
+### 安装
 
 可以参考这个官方[链接](https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
 
-1.	安装docker
+#### 安装docker
 
 参考[链接](https://docs.docker.com/install/linux/docker-ce/centos/)，选择Install using the repository
 
