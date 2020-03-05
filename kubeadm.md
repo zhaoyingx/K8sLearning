@@ -40,7 +40,7 @@ chmod 600 xxx.pem
 
 执行`ssh -i kp-xx.pem root@x.x.x.x`, 登录成功
 
-### 安装
+#### 安装docker
 
 可以参考这个官方[链接](https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
 
@@ -60,3 +60,37 @@ chmod 600 xxx.pem
 安装完成后：
 
 <img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/14@2x.png">
+
+执行`sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo`
+
+完成后
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/15@2x.png">
+
+执行`sudo yum install docker-ce docker-ce-cli containerd.io`
+
+开始了
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/16@2x.png">
+
+安装完成后
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/17@2x.png">
+
+执行`docker version`
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/18@2x.png">
+
+启动docker, `sudo systemctl start docker`
+
+Verify that Docker Engine - Community is installed correctly by running the hello-world image. `sudo docker run hello-world`
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/19@2x.png">
+
+OK ,docker安装完成了
+
+#### 安装kubeadm、kubelet、kubectl
+
+这里需要，kubeadm把需要的各组件都使用容器方式安装运行，但是kubelet是直接安装在宿主机上的
