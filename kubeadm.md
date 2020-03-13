@@ -203,3 +203,9 @@ master节点已经ready了，执行`kubectl config view` , 可以查看集群配
 可以了，至于原因我没有细看，先解决问题再说，现在各节点已经是Ready状态了
 
 至此，一个集群已经搭建完成，注意这个集群不是高可用的，所以只能用于实验环境
+
+### 后续
+
+进入到/etc/kubernetes中
+
+<img width="500" src="https://github.com/zhaoyingx/K8sLearning/blob/master/images/25@2x.png">
